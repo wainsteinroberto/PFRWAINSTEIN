@@ -13,55 +13,61 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Formulario de Contacto - Viajes 1</title>
 </head>
-
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg" style="background-color: #003366;"> <!-- Cambié el color aquí -->
       <div class="container-fluid">
-        <a href="../index.html" aria-label="Ir a la página principal" class="logo-link">
-          <img src="../assets/images/VIAJES 1 LOGO.ico" alt="Logo de Viajes 1" class="img-fluid logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Menú de navegación">
+        <div class="logo">
+          <h1>Viajes1.com</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="d-flex justify-content-center w-100">
+          <div class="d-flex align-items-center">
+            <a href="https://wa.me/12345678900?text=Hola,%20me%20gustaría%20más%20información%20sobre%20sus%20servicios" target="_blank" class="text-white me-3" style="text-decoration: none;">
+              <i class="fab fa-whatsapp fa-lg"></i> WhatsApp
+            </a>
+            <span class="text-white"> 097495350</span>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="../index.html" aria-label="Ir a la página de inicio">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/Paquetes.html" aria-label="Ver paquetes">Paquetes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/Vuelos.html" aria-label="Ver vuelos">Vuelos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/Blog.html" aria-label="Leer blog">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html" aria-label="Ir a la página de contacto">Contacto</a>
-            </li>
-          </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Paquetes.html">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Vuelos.html">Vuelos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/Blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
         </div>
       </div>
     </nav>
-  </header>  
-  
+  </header> 
   <main>
     <div class="container my-5">
       <div class="contact-form-area">
         <h1 class="contact-form-title">Contacto</h1>
-        <form>
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <label for="firstName" class="form-label">Nombre *</label>
-              <input type="text" class="form-control" id="firstName" name="firstName" required aria-required="true" placeholder="Ingresa tu nombre">
+        <form class="contact-form">
+            <div class="mb-3">
+              <div class="col-12">
+                <label for="firstName" class="form-label">Nombre *</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required aria-required="true" placeholder="Ingresa tu nombre">
+              </div>
+              <div class="col-12">
+                <label for="lastName" class="form-label">Apellido *</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required aria-required="true" placeholder="Ingresa tu apellido">
+              </div>
             </div>
-            <div class="col-md-6">
-              <label for="lastName" class="form-label">Apellido *</label>
-              <input type="text" class="form-control" id="lastName" name="lastName" required aria-required="true" placeholder="Ingresa tu apellido">
-            </div>
-          </div>
           <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico (opcional)</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo electrónico">
@@ -85,29 +91,26 @@
             <label for="comments" class="form-label">Comentarios *</label>
             <textarea class="form-control" id="comments" name="comments" required aria-required="true" placeholder="Escribe tus comentarios" rows="4"></textarea>
           </div>
-          <button type="submit" class="btn btn-submit">Enviar</button>
+          <button type="submit" class="search-btn">Enviar</button>
         </form>
       </div>
     </div>
   </main>
-  
-  <footer class="bg-dark text-white py-4">
-    <div class="container">
-      <div class="row">
+  <footer class="custom-footer py-4">
+    <div class="container-fluid px-0">
+      <div class="row mx-0">
         <div class="col-md-4 d-flex align-items-center">
-          <img src="../assets/images/VIAJES 1 LOGO.jpeg" alt="Logo" class="img-fluid" style="max-height: 50px;">
+          <div class="logo">Viajes1.com</div>
           <div class="ms-3">
-            <p class="mb-0">Teléfono: +598 999 999</p>
-            <p class="mb-0">Email: contacto@viajes1.com</p>
+            <h5>Teléfono: +598 999 999</h5>
+            <h5>Email: contacto@viajes1.com</h5>
           </div>
         </div>
-
         <div class="col-md-4 text-center">
-          <p class="mb-0">© 2024 Todos los derechos reservados</p>
+          <h5>© 2024 Todos los derechos reservados</h5>
         </div>
-        
         <div class="col-md-4 text-end">
-          <p class="mb-0">Síguenos:</p>
+          <h5>Síguenos</h5>
           <div>
             <a href="https://facebook.com" class="text-white footer-icon me-2" target="_blank" aria-label="Facebook">
               <i class="fab fa-facebook-f"></i>

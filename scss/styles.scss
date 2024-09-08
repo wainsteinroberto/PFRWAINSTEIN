@@ -1,8 +1,10 @@
-@import 'components/buttons';
-@import 'components/forms';
-
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/paquetes';
-@import 'layout/main';
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+@import 'buttons';
+@import 'forms';
+@import 'header';
+@import 'footer';
+@import 'base';
+@import 'main';
 
